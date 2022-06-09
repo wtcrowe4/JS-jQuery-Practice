@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <script src="https://code.jquery.com/jquery-git.js"></script>
-    <script> //Your Code Here </script>
+    <script> 
+        $(document).ready(()=>{
+            $('#buttonID').click(()=>{
+                $('input[name]').val('Thomas Crowe')
+            })
+        })
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">     
+    <title>J Query #2</title>
 </head>
 
 <body>
     <p>Please Input your Name:</p>
-    <input type="text" name="name">
-    <input id="buttonName" type="button" value="Click to set name" />
+    <input title="name" type="text" name="name">
+    <input title="button" id="buttonID" type="button" value="Click to set name" />
 </body>
 
 </html>

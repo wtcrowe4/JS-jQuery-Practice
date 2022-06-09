@@ -1,10 +1,24 @@
 
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <script src="https://code.jquery.com/jquery-git.js"></script>
-    <script> //Your Code Here </script>
+    <script> 
+        let createDiv = () => {
+            let divObject = {
+                id: 'newdiv',
+                class: 'newdivClass',
+                css: {
+                    'color': 'White',
+                    'background': 'Blue',
+                    'font-size': '20px'
+                }
+            }
+            let $div = $('<div>', divObject)
+                $div.html('Gimme that new div')
+                $('body').append($div)
+        }
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Create a div using jQuery with style tag.</title>    
